@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="service.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="service.js"></script>
+</head>
+<body>
+  <script>
+    document.addEventListener("mousemove", function (event) {
+const navbar = document.querySelector(".nav-bar");
+
+if (event.clientY < 50) { // If mouse is near the top (within 50px)
+    navbar.classList.add("visible");
+} else {
+    navbar.classList.remove("visible");
+}
+});
+
+    document.addEventListener("DOMContentLoaded", function () {
+document.querySelector(".container").classList.add("animated-form");
+});
+</script>
+
+<div class="nav-bar">
+  <div class="logo"><img src="http://localhost/photography%20og/gallery/logog.png" alt /></div>
+  <div class="bars">
+    <a href="http://localhost/photography%20og/portfolio.html"><h2>Home</h2></a>
+    <a href="http://localhost/photography%20og/portfolio.html#gallery"><h2>Gallery</h2></a>
+    <a href="http://localhost/photography%20og/portfolio.html#work"><h2>Work</h2></a>
+    <a href="http://localhost/photography%20og/portfolio.html#about"><h2>About Us</h2></a>
+    <a
+    href="http://localhost/photography%20og/frames.html"><h2>Frames</h2></a>   
+  </div>
+</div>
+<div class="container1">
+     
+        <div id="js-fullpage">
+            <div class="section " id="section-1" data-anchor="js-wheel_page-anchor-1">
+              <div class="ag-section_title">Landscape Photography</div>
+            </div>
+            <div class="section " id="section-2" data-anchor="js-wheel_page-anchor-1">
+              <div class="ag-section_title">Event Photography</div>
+            </div>
+            <div class="section" id="section-3" data-anchor="js-wheel_page-anchor-3">
+              <div class="ag-section_title">Portrait Photography</div>
+            </div>
+            <div class="section" id="section-4" data-anchor="js-wheel_page-anchor-4">
+              <div class="ag-section_title">Product Photography</div>
+            </div>
+            <div class="section" id="section-5" data-anchor="js-wheel_page-anchor-5">
+              <div class="ag-section_title">Fashion Photography</div>
+            </div>
+            <div class="section" id="section-6" data-anchor="js-wheel_page-anchor-6">
+              <div class="ag-section_title">Architectural Photography</div>
+            </div>
+            <div class="section" id="section-7" data-anchor="js-wheel_page-anchor-7">
+              <div class="ag-section_title">Animal Photography</div>
+            </div>
+            <div class="section" id="section-8" data-anchor="js-wheel_page-anchor-8">
+              <div class="ag-section_title">Black and White Photography</div>
+            </div>
+          </div>
+          
+          <div class="ag-wheel-block">
+            <ul id="js-wheel" class="ag-wheel_list">
+              <li id="js-wheel_page-name-1" class="js-wheel_page-name ag-wheel_page-name js-ag-active">
+                <a href="#js-wheel_page-anchor-1">
+                  <span class="ag-wheel-page_num">01</span>
+                </a>
+              </li>
+              <li id="js-wheel_page-name-2" class="js-wheel_page-name ag-wheel_page-name">
+                <a href="#js-wheel_page-anchor-2">
+                  <span class="ag-wheel-page_num">02</span>
+                </a>
+              </li>
+              <li id="js-wheel_page-name-3" class="js-wheel_page-name ag-wheel_page-name">
+                <a href="#js-wheel_page-anchor-3">
+                  <span class="ag-wheel-page_num">03</span>
+                </a>
+              </li>
+              <li id="js-wheel_page-name-4" class="js-wheel_page-name ag-wheel_page-name">
+                <a href="#js-wheel_page-anchor-4">
+                  <span class="ag-wheel-page_num">04</span>
+                </a>
+              </li>
+              <li id="js-wheel_page-name-5" class="js-wheel_page-name ag-wheel_page-name">
+                <a href="#js-wheel_page-anchor-5">
+                  <span class="ag-wheel-page_num">05</span>
+                </a>
+              </li>
+              <li id="js-wheel_page-name-6" class="js-wheel_page-name ag-wheel_page-name">
+                <a href="#js-wheel_page-anchor-6">
+                  <span class="ag-wheel-page_num">06</span>
+                </a>
+              </li>
+              <li id="js-wheel_page-name-7" class="js-wheel_page-name ag-wheel_page-name">
+                <a href="#js-wheel_page-anchor-7">
+                  <span class="ag-wheel-page_num">07</span>
+                </a>
+              </li>
+              <li id="js-wheel_page-name-8" class="js-wheel_page-name ag-wheel_page-name">
+                <a href="#js-wheel_page-anchor-8">
+                  <span class="ag-wheel-page_num">08</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      document.addEventListener("mousemove", function (event) {
+  const navbar = document.querySelector(".nav-bar");
+
+  if (event.clientY < 50) { // If mouse is near the top (within 50px)
+      navbar.classList.add("visible");
+  } else {
+      navbar.classList.remove("visible");
+  }
+});
+
+      document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".container").classList.add("animated-form");
+});
+
+
+
+  </script>
+       <div class="nav-bar">
+        <div class="logo"><img src="http://localhost/photography%20og/gallery/logog.png" alt /></div>
+        <div class="bars">
+          <a href="http://localhost/photography%20og/portfolio.html"><h2>Home</h2></a>
+          <a href="http://localhost/photography%20og/portfolio.html#gallery"><h2>Gallery</h2></a>
+          <a href="http://localhost/photography%20og/portfolio.html#work"><h2>Work</h2></a>
+          <a href="http://localhost/photography%20og/portfolio.html#about"><h2>About Us</h2></a>
+          <a
+                    href="http://localhost/photography%20og/frames.html"><h2>Frames</h2></a>
+          
+        </div>
+      </div>
+
+
+    <div class="main-container">
+      
+      <div class="container" id="container">
+        <div class="form-container sign-in-container">
+          <form action="enquiry.php" method="POST">
+            <h1 style="margin-bottom: 8%;">Message Us</h1>
+            <input type="text" name="PhoneNumber" placeholder="Drop Your Contact Number" />
+            <input type="text" name="Message"placeholder="Your message/enquiry" />
+            <a href="portfolio.html"><button style="margin-top: 8%;" onclick="sendMessage()">Send Message</button></a>
+            <p id="successMessage" style="display: none; color: rgb(0, 32, 0); font-weight: bold;">Message sent successfully!</p>
+          </form>
+        </div>
+            <div class="overlay-panel overlay-right">
+              <h1 style="color: antiquewhite;">Hello!</h1>
+              <p>Want to know more about our way of work?<br>Drop Us Your Queries  </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function sendMessage() {
+          // Show the success message
+          document.getElementById("successMessage").style.display = "block";
+  
+          // Hide the message after 3 seconds
+          setTimeout(function() {
+              document.getElementById("successMessage").style.display = "none";
+          }, 3000);
+      }
+  </script>
+  </body>
+</html>

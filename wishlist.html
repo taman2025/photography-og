@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wishlist</title>
+        <link rel="stylesheet" href="portfoliostyle.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+
+    </head>
+    
+    <body>
+        <style>
+      
+            .wishlist-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding:1%;
+                border-bottom: 1px solid #ddd;
+            }
+            .wishlist-item img {
+                width: 150px;
+                margin-right: 10px;
+            }
+            button {
+                padding: 5px 10px;
+                cursor: pointer;
+                border: none;
+                background-color: green;
+                color: white;
+                margin: 5px;
+                width: 220px;
+                font-size: 1.5rem;
+            }
+            .remove-btn {
+                background-color: red;
+            }
+            
+            h1{
+                background-color: #05391d1e;
+                font-size: 3.5rem;
+                color: #05391d;
+                text-align: center;
+                margin-top: -3.5%;
+                padding-top: 0.25%;
+                margin-bottom: -0.10%;
+            }
+        </style>
+
+        <a href="http://localhost/photography%20og/bookingform.html"
+            class="floating-button">Book Your Slot</a>
+        <div class="nav-bar">
+            <div class="logo"><img
+                    src="http://localhost/photography%20og/gallery/logog.png"
+                    alt /></div>
+            <div class="bars">
+                <a
+                    href="http://localhost/photography%20og/portfolio.html"><h2>Home</h2></a>
+                <a
+                    href="http://localhost/photography%20og/portfolio.html#gallery"><h2>Gallery</h2></a>
+                <a
+                    href="http://localhost/photography%20og/portfolio.html#work"><h2>Work</h2></a>
+                <a
+                    href="http://localhost/photography%20og/portfolio.html#about"><h2>About
+                        Us</h2></a>
+                        <a
+                        href="http://localhost/photography%20og/frames.html"><h2>Frames</h2></a>
+
+            </div>
+        </div>
+
+
+        <h1>Your Wishlist</h1>
+        <div id="wishlistItems"></div>
+    
+        <script src="http://localhost/photography%20og/portfolioscript.js"></script>
+    </body>
+</html>

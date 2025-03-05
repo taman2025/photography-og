@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Addtocart</title>
+        <link rel="stylesheet" href="portfoliostyle.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+       
+    </head>
+    <body>
+        
+        <style>
+            *{
+                color: black;
+                font-size: 1.2rem;
+                 
+            }
+        
+            .cart-item img, .wishlist-item img { width: 150px; margin-right: 2px; padding: 1%; box-shadow: 0px 10px 10px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 5%; margin-top: 2%; height: 200px;}
+            .cart-item, .wishlist-item { display: flex; align-items: center; justify-content: space-evenly;background-color: #05391d1e; }
+            #totalSection { margin-top: 0px; padding: 10px; background:  #05391d1e; text-align: center;}
+
+            h1{
+                background-color: #05391d1e;
+                font-size: 3.5rem;
+                color: #05391d;
+                text-align: center;
+                margin-top: -3.5%;
+                margin-bottom: 0;
+                padding: 1%;
+            }
+      
+        </style>
+
+        <a href="http://localhost/photography%20og/bookingform.html"
+            class="floating-button">Book Your Slot</a>
+        <div class="nav-bar">
+            <div class="logo"><img
+                    src="http://localhost/photography%20og/gallery/logog.png"
+                    alt /></div>
+            <div class="bars">
+                <a
+                    href="http://localhost/photography%20og/portfolio.html"><h2>Home</h2></a>
+                <a
+                    href="http://localhost/photography%20og/portfolio.html#gallery"><h2>Gallery</h2></a>
+                <a
+                    href="http://localhost/photography%20og/portfolio.html#work"><h2>Work</h2></a>
+                <a
+                    href="http://localhost/photography%20og/portfolio.html#about"><h2>About
+                        Us</h2></a>
+                        <a
+                        href="http://localhost/photography%20og/frames.html"><h2>Frames</h2></a>
+            </div>
+        </div>
+
+        <h1>Your Cart</h1>
+        <div id="cartItems"></div>
+        <div id="totalSection">
+            <h3>Total Price: <span id="totalPrice">₹0</span></h3>
+            <button id="checkoutBtn" onclick="checkout()" style="margin-top: 1%; color: red;">Proceed to Checkout</button>
+        </div>
+
+        <script src="http://localhost/photography%20og/portfolioscript.js"></script>
+    </body>
+</html>

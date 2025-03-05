@@ -1,0 +1,148 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-bar {
+    height: 70px;
+    width: 100%;
+    background-color: #05391d;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    .logo {
+      height: 60px;
+      width: 180px;
+      margin-left: 0%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .bars {
+      height: 60px;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-left: 30%;
+    }
+    h2 {
+      font-size: 25px;
+      color: antiquewhite;
+      width: 160px;
+    }
+  }
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    height: 550px;
+    width: 100%;
+    background-image: url(http://localhost/photography%20og/gallery/DSC03797.JPG);
+    background-size: cover;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    background-image: url(http://localhost/photography%20og/gallery/DSC00316.jpg);
+    background-size: cover;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    background-image: url(http://localhost/photography%20og/gallery/DSC04202.JPG);
+    background-size: cover;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    background-image: url(http://localhost/photography%20og/gallery/dsc01.JPG);
+    background-size: cover;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 7 / span 7;
+    grid-column-start: 5;
+    grid-row-start: 1;
+    background-image: url(http://localhost/photography%20og/gallery/DSC03824.JPG);
+    background-size: cover;
+}
+
+.div6 {
+    grid-column: span 6 / span 6;
+    grid-row: span 4 / span 4;
+    grid-row-start: 8;
+    background-image: url(http://localhost/photography%20og/gallery/DSC04078.JPG);
+    background-size: cover;
+}
+    
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 7 / span 7;
+    grid-row-start: 12;
+    background-image: url(http://localhost/photography%20og/gallery/DSC06478.JPG);
+    background-size: cover;
+}
+   
+
+.div8 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 12;
+    background-image: url(http://localhost/photography%20og/gallery/dsc04.jpg);
+    background-size: cover;
+}
+  
+
+.div9 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 15;
+    background-image: url(http://localhost/photography%20og/gallery/DSC05123.JPG);
+    background-size: cover;
+}
+   
+.div10{
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+    grid-row-start: 12;
+    background-image: url(http://localhost/photography%20og/gallery/dsc00.JPG);
+    background-size: cover;
+}
+
+   
+
+.div11 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 16;
+    background-image: url(http://localhost/photography%20og/gallery/DSC05187.JPG);
+    background-size: cover;
+}
+        

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabh Captures Booking</title>
+    <link rel="stylesheet" href="bookingform.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script>
+        document.addEventListener("mousemove", function (event) {
+    const navbar = document.querySelector(".nav-bar");
+
+    if (event.clientY < 50) { // If mouse is near the top (within 50px)
+        navbar.classList.add("visible");
+    } else {
+        navbar.classList.remove("visible");
+    }
+});
+
+        document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".container").classList.add("animated-form");
+});
+
+function openPage() {
+    window.location.href = "loginform.html";
+  }
+
+
+    </script>
+    <div class="main-container">
+      <div class="nav-bar">
+        <div class="logo"><img src="http://localhost/photography%20og/gallery/logog.png" alt /></div>
+        <div class="bars">
+          <a href="http://localhost/photography%20og/portfolio.html"><h2>Home</h2></a>
+          <a href="http://localhost/photography%20og/portfolio.html#gallery"><h2>Gallery</h2></a>
+          <a href="http://localhost/photography%20og/portfolio.html#work"><h2>Work</h2></a>
+          <a href="http://localhost/photography%20og/portfolio.html#about"><h2>About Us</h2></a>
+          <a
+          href="http://localhost/photography%20og/frames.html"><h2>Frames</h2></a>
+          
+        </div>
+      </div>
+
+    
+    <div class="container">
+    
+        <div class="big-circle"></div>
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Get your booking done.</h3>
+            <p class="text">
+              Give us chance to capture your moments with perfection! Fill out the form below to book your photography session. 📸✨
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <i class="fa-solid fa-map-location-dot icon"></i>
+                <p>Ludhiana, Punjab 141001</p>
+              </div>
+              <div class="information">
+                <i class="fa-solid fa-envelope icon"></i>
+                <p>prabhcaptures@gmail.com</p>
+              </div>
+              <div class="information">
+                <i class="fa-solid fa-phone-volume icon"></i>
+                <p>+91 9914 418 516</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with Us</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/share/18iNBXieyX/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/prabh_captures?igsh=eGZ1OHc1bTA5dmFo "><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/prabhjot-singh-41aa64329"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/919914418516?text=Hello%2C%20I%20am%20interested%20in%20your%20services!"><i class="fa-brands fa-whatsapp"></i></a>
+              
+              </div>
+            </div>
+            <div class="button-container">
+                <button class="btn2"  onclick="openPage()">Message Now</button>
+            </div>
+          </div>
+          <div class="circle one"></div>
+          <div class="circle two"></div>
+
+
+          <div class="contact-form">
+          
+            <form action="booking.php" method="post">
+                <div role="main" class="form-all">
+                  <ul class="form-section page-section" role="presentation" style="background-color: rgba(0, 46, 15, 0.108);">
+                    <div class="header-text httal htvam">
+                        <h2 id="header_37" class="form-header" data-component="header" style="margin-bottom: -3%;">Contact details</h2>
+                      </div>
+
+                    <li class="form-line jf-required" data-type="control_fullname" id="id_2">
+                      <div id="cid_2" class="form-input-wide jf-required" data-layout="full">
+                        <div data-wrapper-react="true"><label class="form-sub-label" for="first_2" id="sublabel_2_first" style="min-height:10px">Full Name</label><span class="form-required">*</span> <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><br>
+                          <input type="text" id="first_2" name="name" class="form-textbox validate[required]" data-defaultvalue="" style="width: 250px;" autoComplete="section-input_2 given-name" size="10" data-component="first" aria-labelledby="label_2 sublabel_2_first" required="" value="" /></span></div>
+                      </div>
+                    </li>
+                    <li class="form-line form-line-column form-col-1 jf-required" data-type="control_email" id="id_4"><label class="form-label form-label-top form-label-auto" id="label_4" for="input_4" aria-hidden="false" style="margin-top: -2%;"> E-mail<span class="form-required">*</span> </label>
+                      <div id="cid_4" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_4" name="email" class="form-textbox validate[required, Email]" data-defaultvalue="" autoComplete="section-input_4 email" style="width:310px" size="310" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_4 sublabel_input_4" required="" value="" /></span> </div>
+                    </li>
+                    <li class="form-line form-line-column form-col-2 jf-required" data-type="control_phone" id="id_5"><label class="form-label form-label-top form-label-auto" id="label_5" for="input_5_full"> Phone Number<span class="form-required">*</span> </label>
+                      <div id="cid_5" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="tel" id="input_5_full" name="number" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" data-defaultvalue="" autoComplete="section-input_5 tel-national" style="width:310px" data-masked="true" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_5" required="" value="" /></span> </div>
+                    </li>
+                    <li id="cid_37" class="form-input-wide" data-type="control_head">
+                      <div class="form-header-group  header-default">
+                        <div class="header-text httal htvam">
+                          <h2 id="header_37" class="form-header" data-component="header" style="margin-bottom: -0.95rem;">Event details</h2>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="form-line form-line-column form-col-2 jf-required" data-type="control_datetime" id="id_10"><label class="form-label form-label-top form-label-auto" id="label_10" for="lite_mode_10" aria-hidden="false"> Event Date<span class="form-required">*</span> </label>
+                        <div id="cid_10" class="form-input-wide jf-required" data-layout="half">
+                          <div data-wrapper-react="true">
+                           
+                              <input class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_10" type="text" size="12" data-maxlength="12" maxLength="12" data-age="" required="" data-format="YYYY-MM-DD" data-seperator="-" placeholder="YYYY-MM-DD" autoComplete="off" aria-labelledby="label_10 sublabel_10_litemode" name="eventdate"span>
+                          </div>
+                        </div>
+                      </li>
+                  
+                    <li class="form-line jf-required" data-type="control_address" id="id_11" data-compound-hint=",,,,Please Select,,Please Select,"><label class="form-label form-label-top form-label-auto" id="label_11" for="input_11_addr_line1" aria-hidden="false"> Event Address<span class="form-required">*</span> </label>
+                      <div id="cid_11" class="form-input-wide jf-required" data-layout="full">
+                        <div summary="" class="form-address-table jsTest-addressField">
+                          <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span class="form-address-line form-address-street-line jsTest-address-lineField"><span class="form-sub-label-container" style="vertical-align:top"><input type="text" name="eventaddress" id="input_11_addr_line1"  class="form-textbox validate[required] form-address-line" data-defaultvalue="" autoComplete="section-input_11 address-line1" style="width: 310px;" data-component="address_line_1" aria-labelledby="label_11 sublabel_11_addr_line1" required="" value="" /></span></span></div>
+                         
+                          <label class="form-label form-label-top form-label-auto" id="label_12" for="input_12" aria-hidden="false"> Packages<span class="form-required">*</span> </label>
+                            <select class="form-dropdown validate[required] form-address-country" name="packages" id="input_11_country" data-component="country" required="" aria-labelledby="label_11 sublabel_11_country" autoComplete="section-input_11 country" style="margin-left: 0.65rem; width: 210px;">
+                                  <option value="">Please Select</option>
+                                  <option value="Pre Wedding (Standard)">Pre Wedding (Standard)</option>
+                                  <option value="Pre Wedding (Deluxe)">Pre Wedding (Deluxe)</option>
+                                  <option value="Pre Wedding (Premium Package)">Pre Wedding (Premium Package)</option>
+                                  <option value="Product Package(Basic)">Product Package(Basic)</option>
+                                  <option value="Product Package(Deluxe)">Product Package(Deluxe)</option>
+                                  <option value="Product Package(Premium)">Product Package(Premium)</option>
+                                  <option value="Wedding Package(Classic)">Wedding Package(Classic)</option>
+                                  <option value="Wedding Package(Elegance)">Wedding Package(Elegance)</option>
+                                  <option value="Wedding Package(Premium)">Wedding Package(Premium)</option>
+                                  <option value="Event Package(Basic)">Event Package(Basic)</option>
+                                  <option value="Event Package(Standard)">Event Package(Standard)</option>
+                                  <option value="Event Package(Premium)">Event Package(Premium)</option>
+                                  <option value="Portfolio Package(Basic)">Portfolio Package(Basic)</option>
+                                  <option value="Portfolio Package(Deluxe)">Portfolio Package(Deluxe)</option>                              
+                                  <option value="Portfolio Package(Signature)">Portfolio Package(Signature)</option>
+                                </select></span></span></div>
+
+
+
+                                <label class="form-label form-label-top form-label-auto" id="label_12" for="input_12" aria-hidden="false"> Budget<span class="form-required">*</span> </label>
+                            <select class="form-dropdown validate[required] form-address-country" name="pricing" id="input_11_country" data-component="country" required="" aria-labelledby="label_11 sublabel_11_country" autoComplete="section-input_11 country" style="margin-left: 0.65rem; width: 210px;">
+                                  <option value="">Please Select</option>
+                                  <option value="10,999-20,999">10,999-20,999</option>
+                                  <option value="21,000-30,999">21,000-30,999</option>
+                                  <option value="31,000-40,999">31,000-40,999</option>
+                                  <option value="41,000-50,999">41,000-50,999</option>
+                                  <option value="51,000-60,999">51,000-60,999</option>
+                                  <option value="61,000-70,999">61,000-70,999</option>
+                                  <option value="71,000-80,999">71,000-80,999</option>
+                                  <option value="81,000-90,999">81,000-90,999</option>
+                                  <option value="Above 1 Lakh">Above 1 Lakh</option>
+                                  <option value="Above 2 Lakh">Above 2 Lakh</option>
+                                  <option value="Above 3 Lakh">Above 3 Lakh</option>
+                                  <option value="Above 4 Lakh">Above 4 Lakh</option>
+                                  <option value="Above 5 Lakh">Above 5 Lakh</option>
+                                </select></span></span></div>
+                        </div>
+                                  
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  
+                    <button type="submit" data-component="button" data-content="" style="background-color: white; color: #05391d;">Submit</button>
+                  
+              </form>
+          </div>
+    </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const eventDateInput = document.getElementById("lite_mode_10");
+      
+          eventDateInput.addEventListener("blur", function () {
+              let dateValue = eventDateInput.value.trim();
+              
+              // Ensure input matches expected MMDDYYYY format
+              if (dateValue.length === 8 && !isNaN(dateValue)) {
+                  let month = dateValue.substring(0, 2);
+                  let day = dateValue.substring(2, 4);
+                  let year = dateValue.substring(4, 8);
+                  
+                  // Convert to MySQL format YYYY-MM-DD
+                  let formattedDate = `${year}-${month}-${day}`;
+                  eventDateInput.value = formattedDate;
+              }
+          });
+      });
+      </script>
+      
+</body>
+</html>
